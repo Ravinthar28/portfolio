@@ -1,0 +1,87 @@
+// CSS FILES
+import "./css/project.css";
+
+// PROJECTS DATA
+const projects = [
+  {
+    projectTitle: "QuizArena (Gamified Quiz App)",
+    ProjectTechStack: "React.js, Redux",
+    projectDescr:
+      "A mobile-responsive quiz app with a gamified experience, interactive dashboard, and a badge.",
+    projectLink: "https://github.com/Ravinthar28/quiz-app",
+  },
+  {
+    projectTitle: "Hall Allocation System (Automated Seat Assignment)",
+    ProjectTechStack: "React.js, Django, REST APIs",
+    projectDescr:
+      "A web app that automates seat allocation, reducing manual work by 50%. Features user authentication and dynamic seat management.",
+    projectLink: "https://github.com/Ravinthar28/Seating_Allocation",
+  },
+  {
+    projectTitle:
+      "Vedic Maths E-learning Website (WordPress-Based Learning Platform)",
+    ProjectTechStack: "WordPress, Custom Plugins",
+    projectDescr:
+      "An educational platform to teach Vedic Maths concepts with interactive learning modules.",
+  },
+  {
+    projectTitle: " Cancer Awareness App (Ongoing Project)",
+    ProjectTechStack: "React.js, Redux",
+    projectDescr:
+      "A web app providing cancer-related information and a doctor search filter.",
+    projectLink: "https://github.com/Ravinthar28/jaruratcare",
+  },
+];
+
+export function Project() {
+  // FUNCTION TO GENERATE PROJECT BOX
+  function ProjectBox({
+    projectTitle,
+    techStack,
+    projectDescr,
+    projectLink,
+    borderColor,
+  }) {
+    return (
+      <div
+        className="project-box"
+        style={{ borderTop: `5px solid ${borderColor}` }}
+      >
+        <div>
+          <h2>{projectTitle}</h2>
+          <p>
+            <b>Tech Stack:</b>
+            {techStack}
+          </p>
+          <p>{projectDescr}</p>
+          <a href={projectLink} className="project-link">
+            🔗 View Project | GitHub Repo
+          </a>
+        </div>
+      </div>
+    );
+  }
+  return (
+    <div className="project-container">
+      <div className="project-container-title">
+        <h1>
+          Projects
+          <br />✨ Showcasing my work and what I’ve built!
+        </h1>
+      </div>
+      <div className="project-box-container">
+        <div className="column">
+          <ProjectBox
+            projectTitle={"QuizArena (Gamified Quiz App)"}
+            techStack={"React.js, Redux"}
+            projectDescr={
+              "A mobile-responsive quiz app with a gamified experience, interactive dashboard, and a badge."
+            }
+            projectLink={"https://github.com/Ravinthar28/quiz-app"}
+            borderColor={"#7cccc8"}
+          />
+        </div>
+      </div>
+    </div>
+  );
+}

@@ -8,6 +8,7 @@ import './App.css';
 import { Home } from './homeComp/Home';
 import { Header } from "./headerComp/Header";
 import { About } from "./aboutComp/About";
+import { Project } from "./projectsComp/Project";
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <Home />
       <About />
+      <Project />
     </div>
   );
 }
