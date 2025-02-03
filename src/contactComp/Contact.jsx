@@ -31,7 +31,7 @@ export function Contact() {
             <FontAwesomeIcon icon={faGithub} />
             <b>GitHub:</b>
             <a href="https://github.com/Ravinthar28">
-              🔗 github.com/yourusername
+              🔗 github.com/Ravinthar28
             </a>
           </div>
         </div>

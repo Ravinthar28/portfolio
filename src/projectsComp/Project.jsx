@@ -39,7 +39,10 @@ export function Project() {
       <div className="project-container-title">
         <h1>
           Projects
-          <br />✨ Showcasing my work and what I’ve built!
+          <br />
+          <span className="project-container-title-2">
+            ✨ Showcasing my work and what I’ve built!
+          </span>
         </h1>
       </div>
       <div className="project-box-container">

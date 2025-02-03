@@ -88,3 +88,33 @@
         font-size:15px;
     }
 }
+
+/* FOR MOBILE SCREEN */
+
+@media screen and (max-width:640px) {
+    .about-container{
+        height:120vh;
+    }
+    .about-title{
+        font-size:30px;
+    }
+    .about-title-2{
+        font-size:20px;
+    }
+    .who-am-i-container{
+        width:100%;
+    }
+    .who-am-i-container p{
+        font-size: 14px;
+    }
+    .journey-container{
+        margin-left:0;
+    }
+    .journey-box-container{
+        flex-direction: column;
+    }
+    .journey-box{
+        width:80%;
+    }
+
+}

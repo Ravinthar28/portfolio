@@ -55,7 +55,13 @@
 
 @media screen and (max-width:640px) {
     .header-container{
-        width:96vw;
+        width:95vw;
         top:2%;
+        
+    }
+    .navigator ul li a{
+        font-size:14px;
+        padding:8px 10px;
+        margin:0 1%;
     }
 }
