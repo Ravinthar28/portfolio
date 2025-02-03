@@ -30,7 +30,7 @@ export function Home() {
           </div>
 
           <p className="home-sub-heading">
-            For me, development is more than just writing code—it's about
+            For me, development is more than just writing code it's about
             solving real-world problems and creating meaningful experiences.
             Every project I build is an opportunity to innovate and improve.
           </p>

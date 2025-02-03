@@ -23,7 +23,7 @@ export function About() {
             data-wow-delay="0.5s"
           >
             About Me <br />
-            💡 Turning ideas into interactive web experiences!
+            <span className="about-title-2">💡 Turning ideas into interactive web experiences!</span>
           </h1>
           <div
             className="who-am-i-container wow animate__animated animate__fadeIn"

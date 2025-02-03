@@ -56,3 +56,35 @@
     justify-content: center;
     border-radius: 20px;
 }
+
+/* FOR TABLET SCREEN */
+
+@media screen  and (min-width:641px) and (max-width:1024px) {
+    .about-container{
+        height:70vh;
+    }
+    .about-title{
+        font-size:25px
+    }
+    .about-title-2{
+        font-size:16px;
+    }
+    .who-am-i-container{
+        width:80%;
+    }
+    .who-am-i-container p{
+        font-size:14px;
+    }
+    .journey-container{
+        margin-left:0;
+    }
+    .journey-box{
+        width:45%;
+        margin:1%;
+        font-size:14px;
+        box-shadow: 5px 5px 6px;
+    }
+    .journey-box h3{
+        font-size:15px;
+    }
+}

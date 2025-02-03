@@ -56,3 +56,32 @@
 .project-box a:hover{
     text-decoration: underline;
 }
+
+/* FOR TABLET SCREEN */
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .project-container{
+        height:110vh;
+    }
+    .project-container-title h1{
+        font-size:25px;
+    }
+    .project-box-inner-container{
+        display: block;
+    }
+    .project-box-inner-container .column{
+        width:100%;
+        height:fit-content;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .project-box{
+        width:40%;
+    }
+    .project-box h2{
+        font-size:18px;
+    }
+    .project-box p,.project-box a{
+        font-size: 14px;
+    }
+}

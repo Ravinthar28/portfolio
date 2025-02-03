@@ -8,7 +8,7 @@
 }
 
 .home-right,.home-left{
-    width:50%;
+    width:50vw;
     height:100%;
     display: flex;
     align-items: center;
@@ -22,7 +22,7 @@
     padding:2%;
 }
 .home-right-content{
-    height:50vh;
+  width:100%; 
 }
 
 .home-pic{
@@ -56,7 +56,7 @@
 }
 
   .typing-demo {
-    width: 117ch;
+    width: 118ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
@@ -80,5 +80,63 @@
   @keyframes blink {
     50% {
       border-color: transparent
+    }
+  }
+
+  /* FOR TABLET SCREEN */
+
+  @media screen and (min-width:641px) and (max-width:1024px) {
+    .home-container{
+      height:80vh;
+    }
+    .home-title-1{
+      font-size:25px;
+    }
+    .home-right-content{
+      width:90%;
+    }
+    .typing-demo{
+      width:38ch;
+    }
+    .home-title-2{
+      font-size:16px;
+    }
+    .home-sub-heading{
+      font-size:14px;
+    }
+    .home-btn-container button {
+      font-size:13px;
+      width:40%;
+    }
+  }
+
+  /* FOR MOBILE SCREEN */
+
+  @media screen and (max-width:640px) {
+    .home-container{
+      height:60vh;
+    }
+    .home-left{
+      display: none;
+    }
+    .home-right{
+      width:100%;
+      background:linear-gradient(to top,#f8f7f7,#fff);
+    }
+    .home-title-1{
+      font-size:30px;
+    }
+    .home-title-2{
+      font-size:20px;
+    }
+    .home-sub-heading{
+      font-size:14px;
+    }
+    .typing-demo{
+      width:47ch;
+    }
+    .home-btn-container button{
+      width:40%;
+      font-size:14px;
     }
   }

@@ -1,9 +1,13 @@
 
 .header-container{
-    width:100%;
+    width:50vw;
     height:6vh;
     position: fixed;
     z-index: 100;
+    top:3%;
+    left:50%;
+    transform: translateX(-50%);
+    
 }
 .header-container header{
     width:100%;
@@ -37,4 +41,21 @@
 
 .navigator ul li a:hover{
     background-color: #dbdbdb;
+}
+
+/* FOR TABLET SCREEN */
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .header-container{
+        width:70vw;
+    }
+}
+
+/* FOR MOBILE SCREEN */
+
+@media screen and (max-width:640px) {
+    .header-container{
+        width:96vw;
+        top:2%;
+    }
 }

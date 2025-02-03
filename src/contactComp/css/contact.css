@@ -30,9 +30,34 @@
 .contact {
     font-size:20px;
 }
-.contact h1,p{
+.contact h1,div{
     margin:2% 0;
 }
-.contact p b{
+.contact div b{
     margin:0 2%;
+}
+
+/* FOR TABLET SCREEN */
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .contact-container{
+        height:70vh;
+    }
+    .contact{
+        font-size:14px;
+    }
+    .contact-title{
+        font-size:30px;
+    }
+    .contact-bg{
+        display: flex;
+        align-items: center;
+    }
+    .contact-content{
+        padding:1%;
+    }
+    .contact p b{
+        margin:0;
+        margin-right:5%;
+    }
 }

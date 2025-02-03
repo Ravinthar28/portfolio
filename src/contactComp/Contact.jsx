@@ -16,29 +16,34 @@ export function Contact() {
         <div
           className="contact wow animate__animated animate__fadeIn"
           data-wow-duration="1.5s"
-          data-wow-delay="0.5s"
+          data-wow-delay="0.3s"
         >
           <h1 className="contact-title">📩 Get in Touch</h1>
           <p>💬 Have a project in mind or just want to connect? Let's talk!</p>
-          <p>
+          <div>
             <FontAwesomeIcon icon={faMailBulk} />
             <b>Email:</b>
             <a href="mailto:ravintharravinthar2022@gmail.com">
               ravintharravinthar2022@gmail.com
             </a>
-          </p>
-          <p>
+          </div>
+          <div>
             <FontAwesomeIcon icon={faGithub} />
             <b>GitHub:</b>
             <a href="https://github.com/Ravinthar28">
               🔗 github.com/yourusername
             </a>
-          </p>
+          </div>
         </div>
       </div>
-      <div className="contact-bg wow animate__animated animate__fadeIn" data-wow-duration="1.5s"
-          data-wow-delay="0.5s">
-        <img src={contactPic} alt="Loading.." className="contact-pic" />
+      <div className="contact-bg">
+        <img
+          src={contactPic}
+          alt="Loading.."
+          className="contact-pic wow animate__animated animate__fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay="0.3s"
+        />
       </div>
     </div>
   );

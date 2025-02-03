@@ -70,3 +70,17 @@
     right:15%;
     transform: rotate(10deg);
 }
+
+/* FOR TABLET SCREEN */
+
+@media screen and (min-width:641px) and (max-width:1024px) {
+    .skills-container{
+        height:68vh;
+    }
+    .skills-title{
+        font-size:35px;
+    }
+    .logo{
+        width:100px;
+    }
+}
