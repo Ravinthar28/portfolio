@@ -13,6 +13,7 @@ import { Header } from "./headerComp/Header";
 import { About } from "./aboutComp/About";
 import { Project } from "./projectsComp/Project";
 import { Skills } from "./skillsComp/Skills";
+import { Contact } from "./contactComp/Contact";
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <About />
       <Project />
       <Skills />
+      <Contact />
     </div>
   );
 }

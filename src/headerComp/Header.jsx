@@ -4,7 +4,7 @@ import "./css/head.css";
 
 export function Header(){
     return(
-        <div className="header-container wow animate__animated animate__fadeIn" data-wow-duration="1.5s">
+        <div className="header-container wow animate__animated animate__fadeIn" data-wow-duration="1.5s" data-wow-delay="0.5s">
             <header>
                 <nav className="navigator">
                     <ul>
