@@ -25,7 +25,7 @@ const projects = [
       "An educational platform to teach Vedic Maths concepts with interactive learning modules.",
   },
   {
-    projectTitle: " Cancer Awareness App (Ongoing Project)",
+    projectTitle: "Cancer Awareness App (Ongoing Project)",
     ProjectTechStack: "React.js, Redux",
     projectDescr:
       "A web app providing cancer-related information and a doctor search filter.",
@@ -62,7 +62,7 @@ export function Project() {
     );
   }
   return (
-    <div className="project-container">
+    <div className="project-container wow animate__animated animate__fadeIn" data-wow-duration="1.5s"id="projects">
       <div className="project-container-title">
         <h1>
           Projects
@@ -70,6 +70,7 @@ export function Project() {
         </h1>
       </div>
       <div className="project-box-container">
+        <div className="project-box-inner-container">
         <div className="column">
           <ProjectBox
             projectTitle={"QuizArena (Gamified Quiz App)"}
@@ -80,6 +81,37 @@ export function Project() {
             projectLink={"https://github.com/Ravinthar28/quiz-app"}
             borderColor={"#7cccc8"}
           />
+        </div>
+        <div className="column">
+            <ProjectBox
+                projectTitle={"Hall Allocation System (Automated Seat Assignment)"}
+                techStack={"React.js, Django, REST APIs"}
+                projectDescr={
+                "A web app that automates seat allocation, reducing manual work by 50%. Features user authentication and dynamic seat management."
+                }
+                projectLink={"https://github.com/Ravinthar28/Seating_Allocation"}
+                borderColor={"#b06469"}
+            />
+            <ProjectBox
+                projectTitle={"Vedic Maths E-learning Website (WordPress-Based Learning Platform)"}
+                techStack={"WordPress, Custom Plugins"}
+                projectDescr={
+                "An educational platform to teach Vedic Maths concepts with interactive learning modules."
+                }
+                borderColor={"orange"}
+            />
+        </div>
+        <div className="column">
+            <ProjectBox
+                projectTitle={"Cancer Awareness App (Ongoing Project)"}
+                techStack={"React.js, Redux"}
+                projectDescr={
+                "A web app providing cancer-related information and a doctor search filter."
+                }
+                projectLink={"https://github.com/Ravinthar28/Seating_Allocation"}
+                borderColor={"#7cccc8"}
+            />
+        </div>
         </div>
       </div>
     </div>

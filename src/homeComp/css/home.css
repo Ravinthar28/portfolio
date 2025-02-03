@@ -4,6 +4,7 @@
     height:100vh;
     display: flex;
     position: relative;
+    background-color: #f8f7f7;
 }
 
 .home-right,.home-left{
@@ -14,9 +15,10 @@
     justify-content: center;
 }
 .home-left{
-    background-color: #f3f3f3;
+  background-color: #f8f7f7;
 }
 .home-right{
+    background-color: #fff;
     padding:2%;
 }
 .home-right-content{
