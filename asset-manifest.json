@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.26e80d4b.css",
+    "main.js": "/portfolio/static/js/main.c8f194c2.js",
+    "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
+    "static/media/home-bg.png": "/portfolio/static/media/home-bg.73aefa6a54929233c6e8.png",
+    "static/media/css-logo.png": "/portfolio/static/media/css-logo.75f711394bbcdacef16d.png",
+    "static/media/node-js-logo.png": "/portfolio/static/media/node-js-logo.1b9591d93f82529ff7b5.png",
+    "static/media/contact-img.jpg": "/portfolio/static/media/contact-img.30e4aaa67e0bb834d350.jpg",
+    "static/media/html-logo.png": "/portfolio/static/media/html-logo.2d6f8a3e44264892ba13.png",
+    "static/media/rest-api-logo.png": "/portfolio/static/media/rest-api-logo.fe9242e98c43d5c1ba29.png",
+    "static/media/react-logo.png": "/portfolio/static/media/react-logo.a5a797497f829d62b2a5.png",
+    "static/media/redux-logo.png": "/portfolio/static/media/redux-logo.19a1c26909289c981878.png",
+    "static/media/bootstrap-logo.png": "/portfolio/static/media/bootstrap-logo.e84fb59bcd471192256c.png",
+    "static/media/JavaScript-logo.png": "/portfolio/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
+    "index.html": "/portfolio/index.html",
+    "main.26e80d4b.css.map": "/portfolio/static/css/main.26e80d4b.css.map",
+    "main.c8f194c2.js.map": "/portfolio/static/js/main.c8f194c2.js.map",
+    "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.26e80d4b.css",
+    "static/js/main.c8f194c2.js"
+  ]
+}
