@@ -4,7 +4,8 @@
     height:100vh;
     display: flex;
     position: relative;
-    background-color: #f8f7f7;
+    margin-top:0;
+    overflow-x: hidden;
 }
 
 .home-right,.home-left{
@@ -13,12 +14,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top:0;
 }
 .home-left{
-  background-color: #f8f7f7;
+  padding:8%;
 }
 .home-right{
-    background-color: #fff;
     padding:2%;
 }
 .home-right-content{
@@ -33,6 +34,24 @@
     font-size:50px;
     margin:3% 0;
 }
+
+@keyframes glow{
+  from {
+    text-shadow: 0;
+  }
+  to{
+    text-shadow: 0 0 5px;
+  }
+}
+
+.home-title-1{
+  color: #f0e68c;
+  animation-name: glow;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
 .home-sub-heading{
     margin:3% 0;
     font-size:18px;
@@ -42,27 +61,23 @@
     margin:3% 0 ;
 }
 .home-btn-container button{
+    width:30%;
+    color:#000;
     background-color: #fff;
     font-size: 17px;
     font-weight: 600;
     position: relative;
-    box-shadow: 5px 6px 1px #000;
-    border:3px solid #000;
+    box-shadow: 5px 6px 1px #f0e68c;
+    border:3px solid #f0e68c;;
     border-radius: 10px;
     transition: 0.3s;
 }
 .home-btn-container button:hover{
+    background-color: #f0e68c;;
+    color:#000;
     box-shadow: none;
 }
 
-  .typing-demo {
-    width: 118ch;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    font-family: monospace;
-  }
 
   .home-title-1{
     margin-bottom: 0;
@@ -71,21 +86,16 @@
     margin:0;
 }
   
-  @keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
 
   /* FOR TABLET SCREEN */
 
   @media screen and (min-width:641px) and (max-width:1024px) {
+    .home-left{
+      padding:1%;
+    }
+    .app-container{
+      width:100%;
+    }
     .home-container{
       height:80vh;
     }
@@ -114,15 +124,22 @@
 
   @media screen and (max-width:640px) {
     .home-container{
-      height:60vh;
+      height:100vh;
+      display: block;
     }
     .home-left{
-      display: none;
+      width:100%;
+      height:50%;
+      padding-left:2%;
+      padding-right:2%;
+      padding-bottom:0;
     }
     .home-right{
+      margin-top:-20%;
       width:100%;
-      background:linear-gradient(to top,#f8f7f7,#fff);
+      height:50%;
     }
+    
     .home-title-1{
       font-size:30px;
     }
@@ -131,9 +148,6 @@
     }
     .home-sub-heading{
       font-size:14px;
-    }
-    .typing-demo{
-      width:47ch;
     }
     .home-btn-container button{
       width:40%;

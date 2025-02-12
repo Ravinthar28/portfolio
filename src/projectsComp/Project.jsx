@@ -15,8 +15,8 @@ export function Project() {
         className="project-box"
         style={{ borderTop: `5px solid ${borderColor}` }}
       >
-        <div>
-          <h2>{projectTitle}</h2>
+        <div className="project-content">
+          <h2 className="project-box-title">{projectTitle}</h2>
           <p>
             <b>Tech Stack:</b>
             {techStack}
@@ -30,20 +30,20 @@ export function Project() {
     );
   }
   return (
-    <div
+    <section className="sec3">
+      <div
       className="project-container wow animate__animated animate__fadeIn"
       data-wow-duration="1.5s"
       data-wow-delay="0.5s"
       id="projects"
     >
       <div className="project-container-title">
-        <h1>
+        <h1 className="project-title-1">
           Projects
-          <br />
-          <span className="project-container-title-2">
-            ✨ Showcasing my work and what I’ve built!
-          </span>
         </h1>
+        <h1 className="project-title-2">
+            ✨ Showcasing my work and what I’ve built!
+          </h1>
       </div>
       <div className="project-box-container">
         <div className="project-box-inner-container">
@@ -95,5 +95,6 @@ export function Project() {
         </div>
       </div>
     </div>
+    </section>
   );
 }

@@ -3,31 +3,23 @@ import "./css/home.css";
 
 // IMAGES
 import homeBgPic from "../images/home-bg.png";
+import { Header } from "../headerComp/Header";
 
 export function Home() {
   return (
-    <div className="home-container" id="home">
-      <div className="home-left">
-        <img
-          src={homeBgPic}
-          alt="Loading..."
-          className="home-pic wow animate__animated animate__fadeIn"
-          data-wow-duration="1.5s"
-          data-wow-delay="0.5s"
-        />
-      </div>
+    <div className="home-container sec1" id="home">
+      <Header />
       <div
-        className="home-right wow animate__animated animate__fadeIn"
+        className="home-left wow animate__animated animate__fadeIn"
         data-wow-duration="1.5s"
         data-wow-delay="0.5s"
       >
         <div className="home-right-content">
           <h1 className="home-title home-title-1">Hi, I'm Ravinthar</h1>
-          <div class="typing-demo">
-            <h1 className="home-title home-title-2">
-              A Passionate Frontend Developer
-            </h1>
-          </div>
+            <p className="home-title home-title-2">
+              A Passionate Frontend <br />Developer
+            </p>
+
 
           <p className="home-sub-heading">
             For me, development is more than just writing code it's about
@@ -44,6 +36,16 @@ export function Home() {
           </div>
         </div>
       </div>
+      <div className="home-right">
+        <img
+          src={homeBgPic}
+          alt="Loading..."
+          className="home-pic wow animate__animated animate__fadeIn"
+          data-wow-duration="1.5s"
+          data-wow-delay="0.5s"
+        />
+      </div>
+      
     </div>
   );
 }

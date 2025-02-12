@@ -7,14 +7,14 @@ export function About() {
     return (
       <div className="journey-box">
         <div>
-          <h3>{head}</h3>
+          <h3 className="journey-box-head">{head}</h3>
           <p>{content}</p>
         </div>
       </div>
     );
   }
   return (
-    <div className="about-container" id="about">
+    <div className="about-container sec2" id="about">
       <div className="about-container-bg">
         <div className="about-content">
           <h1
@@ -22,15 +22,15 @@ export function About() {
             data-wow-duration="1.5s"
             data-wow-delay="0.5s"
           >
-            About Me <br />
-            <span className="about-title-2">💡 Turning ideas into interactive web experiences!</span>
+            About Me
           </h1>
+          <h1 className="about-title-2">💡 Turning ideas into interactive web experiences!</h1>
           <div
             className="who-am-i-container wow animate__animated animate__fadeIn"
             data-wow-duration="1.5s"
             data-wow-delay="0.5s"
           >
-            <h2>Who Am I?</h2>
+            <h2 className="about-sub-title">Who Am I?</h2>
             <p>
               I’m [Ravinthar], a frontend developer passionate about building
               sleek, responsive, and interactive web applications. I specialize
@@ -43,7 +43,7 @@ export function About() {
             data-wow-duration="1.5s"
             data-wow-delay="0.5s"
           >
-            <h2>My Journey</h2>
+            <h2 className="about-sub-title">My Journey</h2>
             <div className="journey-box-container">
               <JourneyBox
                 head={"Computer Science Student"}
